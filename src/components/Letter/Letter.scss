@@ -1,0 +1,13 @@
+.cqhEntry {
+  padding:1px;
+  padding-right:30px;
+}
+
+.cqhInput {
+  border:1px solid black;
+  width:50px
+}
+
+.cqhInput:focus {
+  border:1px solid blue;
+}

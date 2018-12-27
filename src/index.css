@@ -1,0 +1,17 @@
+* {
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+body {
+  font-family: 'Ubuntu Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size:18px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

@@ -1,0 +1,14 @@
+.cqhApp {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  padding:10px;
+}
+
+.cqhApp > h1 {
+  margin:10px;
+}
+
+.cqhInfo {
+  margin-top:20px;
+}
