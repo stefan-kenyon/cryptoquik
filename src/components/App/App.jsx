@@ -33,7 +33,7 @@ class App extends Component {
       if(result === 0) {
         returned = '_'
       } else {
-        returned = letter
+        returned = letter.toUpperCase()
       }
       return returned;
     })
