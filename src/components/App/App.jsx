@@ -27,14 +27,15 @@ class App extends Component {
     let guessBlank = org.split('')
     let guessSpaces = guessBlank.map(letter => {
       let returned = ''
-      letter = letter.toUpperCase()
+      let letterUp = letter.toUpperCase()
+      console.log(letterUp)
       let regex = /[A-Za-z]/
-      let result = letter.search(regex)
+      let result = letterUp.search(regex)
       //console.log(result);
       if(result === 0) {
         returned = '_'
       } else {
-        returned = letter
+        returned = letterUp
       }
       return returned;
     })

@@ -11,8 +11,12 @@ class CryptoIn extends React.Component {
 
   onSubmit() {
     let textIn = document.getElementById('crypto')
+    let guessBlank = textIn.value.split('')
+    let guessUpper = guessBlank.map(letter => letter.toUpperCase())
+    console.log(guessUpper)
+    guessUpper = guessUpper.join('')
     //console.log(textIn.value);
-    this.props.handleSubmit(textIn.value);
+    this.props.handleSubmit(guessUpper);
   }
 
   render() {
