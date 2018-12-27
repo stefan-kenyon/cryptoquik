@@ -22,11 +22,13 @@ export default class Letter extends React.Component {
 
   inputGuess(e) {
     let guess = e.target.value.toUpperCase()
-    let guessObject = {
-      target:this.props.letter,
-      guess
+    if(guess.length === 1 || guess === '') {
+      let guessObject = {
+        target:this.props.letter,
+        guess
+      }
+      this.props.handleGuess(guessObject)
     }
-    this.props.handleGuess(guessObject)
   }
 
   render() {
