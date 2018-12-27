@@ -27,7 +27,7 @@ class App extends Component {
     let guessBlank = org.split('')
     let guessSpaces = guessBlank.map(letter => {
       let returned = ''
-      let regex = /[A-Z]/
+      let regex = /[A-Za-z]/
       let result = letter.search(regex)
       //console.log(result);
       if(result === 0) {
